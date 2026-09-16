@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RUROO™ | Global Private Label & Dropshipping Manufacturing</title>
+  <meta name="description" content="RUROO is a premier B2B manufacturer and private label dropshipping partner. Scale with 3,500+ lab-tested formulations, custom luxury packaging, zero MOQs, and 24-48h blind global fulfillment.">
+  <meta name="keywords" content="dropshipping, private label dropshipping, cosmetics manufacturer, third party manufacturing, white label skincare, perfume manufacturer, RUROO global">
+  
+  <!-- OpenGraph & Social Cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RUROO™ - The Global Engine for Private Label & Dropshipping Brands">
+  <meta property="og:description" content="Launch and scale your e-commerce brand with 3,500+ ready formulations, luxury custom packaging, and automated global blind fulfillment.">
+  <meta property="og:image" content="assets/images/hero-cosmetics.jpg">
+  <meta name="theme-color" content="#FF8A00">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/ruroo-logo.png">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured JSON-LD Schema for B2B Dropship Manufacturer -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RUROO Global Private Label & Dropshipping",
+    "url": "https://rurooglobal.com",
+    "logo": "assets/ruroo-logo.png",
+    "description": "Leading third-party contract manufacturer and private label dropshipping supplier for Health, Beauty, Cosmetics, Perfumes, and Wellness.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-8128153295",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Hindi"]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- =========================================================================
+       Top Utility Bar
+       ========================================================================= -->
+  <div class="header-top-bar">
+    <div class="container">
+      <div class="header-top-bar-inner">
+        <div class="top-bar-left">
+          <span class="top-bar-badge">24–48h Automated Blind Dispatch</span>
+          <span class="d-none d-md-inline">• Zero MOQs on Sample Kits & Dropship Fulfillment</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="mailto:partner@rurooglobal.com" class="top-bar-contact-link">
+            <i class="far fa-envelope"></i> partner@rurooglobal.com
+          </a>
+          <a href="tel:+918128153295" class="top-bar-contact-link">
+            <i class="fas fa-phone-alt"></i> +91 81281 53295
+          </a>
+          <div class="currency-dropdown-wrap">
+            <select id="currency-select" aria-label="Currency Selector">
+              <option value="USD" selected>USD ($)</option>
+              <option value="EUR">EUR (€)</option>
+              <option value="GBP">GBP (£)</option>
+              <option value="INR">INR (₹)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Main Header Area (Transparent Logo + Wide Search + Contact & Actions)
+       ========================================================================= -->
+  <div class="header-middle-bar">
+    <div class="container">
+      <div class="header-middle-inner">
+        <!-- Transparent 3D Logo -->
+        <a href="#" class="brand-logo-link" aria-label="RUROO Home">
+          <img src="assets/ruroo-logo.png" alt="RUROO Logo" class="brand-logo-img">
+        </a>
+
+        <!-- Wide Prominent Search Bar -->
+        <div class="nav-search-wrapper">
+          <div class="nav-search-box">
+            <i class="fas fa-search nav-search-icon"></i>
+            <input type="text" id="header-search-input" class="nav-search-input" 
+              placeholder="Search 3,500+ formulations (e.g. Vitamin C, Oud, Lip Tint)..." autocomplete="off">
+            <button type="button" class="nav-search-btn" aria-label="Search">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <div id="search-live-results" class="search-live-results"></div>
+        </div>
+
+        <!-- Header Middle Right Actions -->
+        <div class="header-middle-actions">
+          <a href="https://api.whatsapp.com/send?phone=918128153295&text=Hello%20RUROO%20team!%20I%20want%20to%20start%20private%20label%20dropshipping." 
+             target="_blank" class="header-action-pill d-none d-xl-flex">
+            <i class="fab fa-whatsapp text-emerald fa-lg"></i>
+            <div class="action-pill-text">
+              <span class="action-pill-sub">Talk to Chemist / Sales</span>
+              <span class="action-pill-title">+91 81281 53295</span>
+            </div>
+          </a>
+
+          <button type="button" id="cart-drawer-trigger" class="cart-drawer-trigger-btn" aria-label="View Sample Cart">
+            <i class="fas fa-box-open"></i>
+            <span id="cart-badge-count" class="cart-badge-count">0</span>
+          </button>
+
+          <a href="#catalog" class="btn btn-primary btn-sm d-none d-md-inline-flex">
+            <i class="fas fa-rocket"></i> Start Dropshipping
+          </a>
+
+          <button type="button" id="mobile-menu-toggle" class="mobile-menu-toggle-btn" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Sticky Navigation Bar (Inspired by TYMK)
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar-inner">
+        <!-- Navigation Links -->
+        <nav class="main-nav">
+          <!-- Solutions Dropdown -->
+          <div class="nav-item-dropdown">
+            <a href="#offerings" class="nav-link">
+              <span>Solutions</span> <i class="fas fa-chevron-down nav-dropdown-icon"></i>
+            </a>
+            <div class="dropdown-menu-custom">
+              <a href="#offerings" class="dropdown-item-custom">
+                <div class="dropdown-item-icon bg-orange-soft"><i class="fas fa-shipping-fast text-amber"></i></div>
+                <div>
+                  <div class="dropdown-item-title">Private Label Dropshipping</div>
+                  <div class="dropdown-item-sub">Blind shipping direct to customers</div>
+                </div>
+              </a>
+              <a href="#offerings" class="dropdown-item-custom">
+                <div class="dropdown-item-icon bg-cyan-soft"><i class="fas fa-tags text-cyan"></i></div>
+                <div>
+                  <div class="dropdown-item-title">3,500+ Ready White Label</div>
+                  <div class="dropdown-item-sub">Fast 48h turnaround market launch</div>
+                </div>
+              </a>
+              <a href="#facility" class="dropdown-item-custom">
+                <div class="dropdown-item-icon bg-purple-soft"><i class="fas fa-flask text-purple"></i></div>
+                <div>
+                  <div class="dropdown-item-title">OEM Custom R&D Formulations</div>
+                  <div class="dropdown-item-sub">Bespoke chemistry & active percentages</div>
+                </div>
+              </a>
+              <a href="#offerings" class="dropdown-item-custom">
+                <div class="dropdown-item-icon bg-emerald-soft"><i class="fas fa-box-tissue text-emerald"></i></div>
+                <div>
+                  <div class="dropdown-item-title">Custom Packaging & Unboxing</div>
+                  <div class="dropdown-item-sub">Foil stamped mailers & luxury glass</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Product Verticals Dropdown -->
+          <div class="nav-item-dropdown">
+            <a href="#categories" class="nav-link">
+              <span>Product Verticals</span> <i class="fas fa-chevron-down nav-dropdown-icon"></i>
+            </a>
+            <div class="dropdown-menu-custom grid-2-col">
+              <a href="#catalog" onclick="window.RurooApp.setCategoryAndScroll('skincare')" class="dropdown-item-custom">
+                <div class="dropdown-item-icon bg-orange-soft"><i class="fas fa-pump-soap text-amber"></i></div>
+                <div>
+                  <div class="dropdown-item-title">Skincare & Serums</div>
+                  <div class="dropdown-item-sub">850+ Clinical Formulations</div>
+                </div>
+              </a>
+              <a href="#catalog" onclick="window.RurooApp.setCategoryAndScroll('cosmetics')" class="dropdown-item-custom">
+                <div class="dropdown-item-icon bg-crimson-soft"><i class="fas fa-magic text-crimson"></i></div>
+                <div>
+                  <div class="dropdown-item-title">Color Makeup & Lips</div>
+                  <div class="dropdown-item-sub">620+ Viral Formulations</div>
+                </div>
+              </a>
+              <a href="#catalog" onclick="window.RurooApp.setCategoryAndScroll('perfumes')" class="dropdown-item-custom">
+                <div class="dropdown-item-icon bg-purple-soft"><i class="fas fa-spray-can text-purple"></i></div>
+                <div>
+                  <div class="dropdown-item-title">Luxury Fragrances</div>
+                  <div class="dropdown-item-sub">480+ Extrait de Parfum</div>
+                </div>
+              </a>
+              <a href="#catalog" onclick="window.RurooApp.setCategoryAndScroll('haircare')" class="dropdown-item-custom">
+                <div class="dropdown-item-icon bg-emerald-soft"><i class="fas fa-feather-alt text-emerald"></i></div>
+                <div>
+                  <div class="dropdown-item-title">Hair & Scalp Care</div>
+                  <div class="dropdown-item-sub">390+ Botanical Formulations</div>
+                </div>
+              </a>
+              <a href="#catalog" onclick="window.RurooApp.setCategoryAndScroll('petcare')" class="dropdown-item-custom">
+                <div class="dropdown-item-icon bg-cyan-soft"><i class="fas fa-paw text-cyan"></i></div>
+                <div>
+                  <div class="dropdown-item-title">Pet Grooming & Care</div>
+                  <div class="dropdown-item-sub">180+ Hypoallergenic Formulas</div>
+                </div>
+              </a>
+              <a href="#catalog" onclick="window.RurooApp.setCategoryAndScroll('nutra')" class="dropdown-item-custom">
+                <div class="dropdown-item-icon bg-orange-soft"><i class="fas fa-capsules text-amber"></i></div>
+                <div>
+                  <div class="dropdown-item-title">Nutraceuticals & Health</div>
+                  <div class="dropdown-item-sub">540+ Daily Ingestibles</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <a href="#calculator" class="nav-link"><i class="fas fa-calculator text-amber"></i> Profit Calculator</a>
+          <a href="#catalog" class="nav-link">Formulation Catalog</a>
+          <a href="#facility" class="nav-link">Manufacturing Facility</a>
+          <a href="#network" class="nav-link">Global Network</a>
+          <a href="#faq" class="nav-link">FAQs</a>
+        </nav>
+
+        <div class="navbar-dispatch-pill d-none d-lg-flex">
+          <i class="fas fa-shield-alt text-emerald"></i>
+          <span>Zero MOQ Blind Fulfillment</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <img src="assets/ruroo-logo.png" alt="RUROO" style="height: 40px;">
+      <button type="button" id="mobile-nav-close" class="rfq-drawer-close-btn">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="#offerings" onclick="document.getElementById('mobile-nav-drawer').classList.remove('active')">Solutions</a>
+      <a href="#categories" onclick="document.getElementById('mobile-nav-drawer').classList.remove('active')">Categories</a>
+      <a href="#calculator" onclick="document.getElementById('mobile-nav-drawer').classList.remove('active')">Profit Calculator</a>
+      <a href="#catalog" onclick="document.getElementById('mobile-nav-drawer').classList.remove('active')">Catalog</a>
+      <a href="#facility" onclick="document.getElementById('mobile-nav-drawer').classList.remove('active')">Facility</a>
+      <a href="#network" onclick="document.getElementById('mobile-nav-drawer').classList.remove('active')">Global Network</a>
+      <a href="#faq" onclick="document.getElementById('mobile-nav-drawer').classList.remove('active')">FAQs</a>
+    </div>
+    <div class="mt-auto">
+      <button class="btn btn-primary w-100" onclick="document.getElementById('mobile-nav-drawer').classList.remove('active'); window.RurooApp.openRfqDrawer();">
+        <i class="fas fa-box"></i> View Sample Kit
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- =========================================================================
+         Hero Section
+         ========================================================================= -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Content -->
+          <div class="hero-content">
+            <div class="hero-badge-verified">
+              <i class="fas fa-check-circle text-emerald"></i> Verified Global Dropshipping & Private Label Partner
+            </div>
+            <h1 class="hero-headline">
+              Scale Your Brand With <br>
+              <span class="text-gradient-ruroo">Zero Inventory Hassle</span>
+            </h1>
+            <p class="hero-description">
+              RUROO manufactures 3,500+ certified cosmetics, skincare, perfumes, and wellness products in state-of-the-art facilities. When your customer buys, we brand, pack, and blind dropship in 24–48 hours worldwide.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#catalog" class="btn btn-primary btn-lg">
+                <i class="fas fa-layer-group"></i> Explore 3,000+ Formulations
+              </a>
+              <a href="#calculator" class="btn btn-secondary btn-lg">
+                <i class="fas fa-calculator text-amber"></i> Calculate Profit Margins
+              </a>
+            </div>
+
+            <div class="hero-stats-row">
+              <div class="hero-stat-item">
+                <span class="hero-stat-number">850+</span>
+                <span class="hero-stat-label">Active DTC Brands</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-number">42+</span>
+                <span class="hero-stat-label">Countries Delivered</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-number">150K</span>
+                <span class="hero-stat-label">Units / Day Capacity</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-number">99.4%</span>
+                <span class="hero-stat-label">On-Time Dispatch SLA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Showcase -->
+          <div class="hero-visual-card">
+            <div class="hero-main-card">
+              <img src="assets/images/hero-cosmetics.jpg" alt="RUROO Private Label Cosmetics" class="hero-card-img">
+              <div class="hero-card-overlay">
+                <span class="hero-overlay-tag">
+                  <i class="fas fa-sparkles"></i> 2026 Dropship Ready
+                </span>
+                <h3 class="hero-overlay-title">Clinical Radiance & Anti-Aging Collection</h3>
+                <p class="hero-overlay-sub">Average Retail Margin: 86% • Blind Custom Packaging Included</p>
+              </div>
+            </div>
+
+            <!-- Floating Micro Badges -->
+            <div class="floating-chip chip-top-left">
+              <div class="chip-icon bg-orange">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <div>
+                <div class="chip-title">Shopify & TikTok Sync</div>
+                <div class="chip-sub">Automated 1-Click Fulfillment</div>
+              </div>
+            </div>
+
+            <div class="floating-chip chip-bottom-right">
+              <div class="chip-icon bg-emerald">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div>
+                <div class="chip-title">100% Blind Dropshipping</div>
+                <div class="chip-sub">Your Brand Name on Every Box</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Infinite Scrolling Certifications Marquee
+         ========================================================================= -->
+    <section class="certifications-section">
+      <div class="marquee-container">
+        <div id="certifications-marquee-track" class="marquee-track"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Offerings & Solutions (Inspired by TYMK)
+         ========================================================================= -->
+    <section id="offerings" class="section-padding offerings-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-cubes"></i> Tailored Solutions</span>
+          <h2 class="section-title">Everything You Need to Dominate E-Commerce</h2>
+          <p class="section-subtitle">
+            From zero-inventory blind dropshipping to custom R&D lab formulations and luxury bespoke packaging, RUROO is your end-to-end powerhouse.
+          </p>
+        </div>
+
+        <div class="offerings-grid">
+          <!-- Card 1 -->
+          <div class="offering-card">
+            <div>
+              <div class="offering-icon-wrap">
+                <i class="fas fa-shipping-fast"></i>
+              </div>
+              <h3 class="offering-title">Private Label Dropshipping</h3>
+              <p class="offering-desc">
+                Sell premium cosmetics and skincare under your own brand without buying inventory upfront. We print your logo, pack with custom branded inserts, and ship directly to your customer in 24–48 hours.
+              </p>
+            </div>
+            <div class="offering-footer">
+              <span class="offering-metric">Zero Minimum Order</span>
+              <a href="#catalog" class="offering-link">Explore SKUs <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="offering-card">
+            <div>
+              <div class="offering-icon-wrap">
+                <i class="fas fa-flask"></i>
+              </div>
+              <h3 class="offering-title">OEM & Custom R&D Formulations</h3>
+              <p class="offering-desc">
+                Partner with our PhD cosmetic chemists to engineer proprietary active percentages, bespoke fragrances, organic botanical blends, and exclusive patented skincare textures.
+              </p>
+            </div>
+            <div class="offering-footer">
+              <span class="offering-metric">In-House Chemistry Lab</span>
+              <a href="#facility" class="offering-link">View Facility <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="offering-card">
+            <div>
+              <div class="offering-icon-wrap">
+                <i class="fas fa-tags"></i>
+              </div>
+              <h3 class="offering-title">3,500+ Ready White Label</h3>
+              <p class="offering-desc">
+                Skip months of R&D testing. Choose from over 3,500 clinical and commercial formulas with established stability, microbiology tests, and regulatory dossiers ready for immediate label proofing.
+              </p>
+            </div>
+            <div class="offering-footer">
+              <span class="offering-metric">48h Time-To-Market</span>
+              <a href="#catalog" class="offering-link">Browse Catalog <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="offering-card">
+            <div>
+              <div class="offering-icon-wrap">
+                <i class="fas fa-box-tissue"></i>
+              </div>
+              <h3 class="offering-title">Custom Packaging & Unboxing</h3>
+              <p class="offering-desc">
+                Transform first-time buyers into lifelong brand evangelists. Luxury frosted glass, magnetic perfume flacons, gold foil stamping, custom mailer boxes, and eco-sustainable silk wrapping paper.
+              </p>
+            </div>
+            <div class="offering-footer">
+              <span class="offering-metric">FSC & Eco Certified</span>
+              <a href="#calculator" class="offering-link">Estimate Box Cost <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Category Explorer Grid
+         ========================================================================= -->
+    <section id="categories" class="section-padding category-explorer-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-th-large"></i> Product Verticals</span>
+          <h2 class="section-title">Explore High-Demand Dropshipping Categories</h2>
+          <p class="section-subtitle">
+            Every category is engineered for maximum profit margins, viral unboxing appeal, and outstanding customer retention.
+          </p>
+        </div>
+
+        <div id="category-explorer-grid" class="category-explorer-grid"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Interactive Dropship Profit & Margin Calculator (Inspired by TYMK)
+         ========================================================================= -->
+    <section id="calculator" class="section-padding calculator-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-calculator text-amber"></i> Live Financial Engine</span>
+          <h2 class="section-title">Calculate Your Dropshipping Margins & Profits</h2>
+          <p class="section-subtitle">
+            See exactly how much revenue and net profit your brand will generate based on your projected order volume, custom packaging, and selling price.
+          </p>
+        </div>
+
+        <div class="calculator-card">
+          <div class="calculator-grid">
+            <!-- Left: Inputs -->
+            <div class="calc-inputs-pane">
+              <div class="calc-control-group">
+                <label for="calc-product-select" class="calc-label">
+                  <span>1. Select Formulation Category</span>
+                  <span class="calc-value-badge">Proven Winners</span>
+                </label>
+                <select id="calc-product-select" class="calc-select" aria-label="Select Formulation"></select>
+              </div>
+
+              <div class="calc-control-group">
+                <label for="calc-volume-slider" class="calc-label">
+                  <span>2. Projected Monthly Orders</span>
+                  <span id="calc-volume-display" class="calc-value-badge">1,200 units/mo</span>
+                </label>
+                <input type="range" id="calc-volume-slider" class="calc-range-slider" min="100" max="10000" step="50" value="1200">
+                <div class="slider-ticks">
+                  <span>100 Units</span>
+                  <span>2,500 Units</span>
+                  <span>5,000 Units</span>
+                  <span>10,000+ Units</span>
+                </div>
+              </div>
+
+              <div class="calc-control-group">
+                <label class="calc-label">3. Select Packaging & Unboxing Tier</label>
+                <div class="packaging-options-grid">
+                  <label class="packaging-radio-label">
+                    <input type="radio" name="packaging-tier" value="standard">
+                    <div class="packaging-radio-text">
+                      <span class="packaging-radio-title">Standard Clean Eco</span>
+                      <span class="packaging-radio-sub">Matte label + Recyclable box</span>
+                    </div>
+                  </label>
+                  <label class="packaging-radio-label">
+                    <input type="radio" name="packaging-tier" value="luxe" checked>
+                    <div class="packaging-radio-text">
+                      <span class="packaging-radio-title">Ultra-Luxury Custom</span>
+                      <span class="packaging-radio-sub">Gold foil + Heavy glass + Tissue</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="calc-control-group">
+                <label for="calc-retail-price" class="calc-label">
+                  <span>4. Your Target Retail Selling Price</span>
+                  <span class="calc-value-badge">Set by You</span>
+                </label>
+                <input type="number" id="calc-retail-price" class="calc-input-text" step="0.50" min="5" value="36.00">
+              </div>
+            </div>
+
+            <!-- Right: Results -->
+            <div class="calc-results-pane">
+              <div class="calc-results-header">
+                <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 6px;">Unit Cost Breakdown</h3>
+                <p class="text-muted text-xs">All costs included: Formulation + Luxury Custom Packaging + Blind Fulfillment</p>
+              </div>
+
+              <div class="calc-breakdown-list">
+                <div class="calc-breakdown-row">
+                  <span>Base Wholesale Formulation:</span>
+                  <span id="calc-out-wholesale" class="text-white font-weight-bold">$4.20</span>
+                </div>
+                <div class="calc-breakdown-row">
+                  <span>Custom Packaging & Labeling:</span>
+                  <span id="calc-out-packaging" class="text-white font-weight-bold">$1.40</span>
+                </div>
+                <div class="calc-breakdown-row">
+                  <span>Pick, Pack & Blind Dispatch:</span>
+                  <span id="calc-out-fulfillment" class="text-white font-weight-bold">$2.20</span>
+                </div>
+                <div class="calc-breakdown-row total-landed">
+                  <span>Total Landed Unit Cost:</span>
+                  <span id="calc-out-landed" class="text-amber">$7.80</span>
+                </div>
+              </div>
+
+              <div class="calc-profit-summary-box">
+                <div class="calc-profit-main-row">
+                  <span class="calc-profit-label">Net Profit / Order:</span>
+                  <span id="calc-out-unit-profit" class="calc-profit-large">$28.20</span>
+                </div>
+                <div class="calc-margin-bar-container">
+                  <div id="calc-margin-bar" class="calc-margin-bar-fill"></div>
+                </div>
+                <div class="calc-margin-bar-labels">
+                  <span class="text-secondary">Gross Margin:</span>
+                  <span id="calc-out-margin-percent" class="text-emerald">78%</span>
+                </div>
+              </div>
+
+              <div class="calc-projections-grid">
+                <div class="calc-projection-card">
+                  <div class="projection-label">Monthly Net Profit</div>
+                  <div id="calc-out-monthly-profit" class="projection-val text-emerald">$33,840</div>
+                </div>
+                <div class="calc-projection-card">
+                  <div class="projection-label">Annual Projected Net</div>
+                  <div id="calc-out-annual-profit" class="projection-val text-amber">$4,06,080</div>
+                </div>
+              </div>
+
+              <button type="button" id="calc-add-sample-btn" class="btn btn-primary w-100">
+                <i class="fas fa-box-check"></i> Order Sample Kit For This Formulation
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Filterable Formulation Catalog
+         ========================================================================= -->
+    <section id="catalog" class="section-padding catalog-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-store"></i> Live Catalog</span>
+          <h2 class="section-title">Verified Formulations Ready For Blind Dropship</h2>
+          <p class="section-subtitle">
+            Order single-unit sample kits to evaluate scents, formulas, and textures in person, or connect your online store for automated global fulfillment.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div id="category-filter-tabs" class="category-tabs-wrapper"></div>
+        <div id="catalog-count-display" class="catalog-count-bar"></div>
+
+        <!-- Products Grid -->
+        <div id="catalog-products-grid" class="products-grid"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Manufacturing Facility & Cleanroom Labs (TYMK-Inspired)
+         ========================================================================= -->
+    <section id="facility" class="section-padding facility-section">
+      <div class="container">
+        <div class="facility-grid">
+          <div class="facility-main-img-wrap">
+            <img src="assets/images/facility-lab.jpg" alt="RUROO Cleanroom Manufacturing Plant" class="facility-main-img">
+            <div class="facility-stats-pill">
+              <div class="fac-stat">
+                <span class="fac-stat-val">1,20,000</span>
+                <span class="fac-stat-label">Sq. Ft. Factory Campus</span>
+              </div>
+              <div class="fac-stat">
+                <span class="fac-stat-val">150,000</span>
+                <span class="fac-stat-label">Units Filled / Day</span>
+              </div>
+              <div class="fac-stat">
+                <span class="fac-stat-val">ISO Class-7</span>
+                <span class="fac-stat-label">Sterile Cleanrooms</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="facility-content">
+            <span class="section-tag"><i class="fas fa-microchip"></i> Infrastructure</span>
+            <h2 class="section-title" style="text-align: left;">World-Class Manufacturing Powerhouse</h2>
+            <p class="section-subtitle" style="text-align: left; margin-bottom: 32px;">
+              Unlike dropshipping brokers who outsource to random vendors, RUROO operates fully equipped industrial facilities with strict pharmaceutical-grade quality controls.
+            </p>
+
+            <div class="facility-features-list">
+              <div class="facility-feature-card">
+                <div class="facility-feat-icon"><i class="fas fa-cogs"></i></div>
+                <div>
+                  <h4 class="facility-feat-title">High-Speed Automated Filling</h4>
+                  <p class="facility-feat-desc">Precision robotic bottling and tube filling lines capable of handling liquids, heavy creams, and alcohol fragrances with ±0.1ml tolerance.</p>
+                </div>
+              </div>
+
+              <div class="facility-feature-card">
+                <div class="facility-feat-icon"><i class="fas fa-vial"></i></div>
+                <div>
+                  <h4 class="facility-feat-title">In-House Analytical R&D Lab</h4>
+                  <p class="facility-feat-desc">HPLC chromatography, microbiological incubators, and accelerated temperature testing guaranteeing 24-36 months stability.</p>
+                </div>
+              </div>
+
+              <div class="facility-feature-card">
+                <div class="facility-feat-icon"><i class="fas fa-barcode"></i></div>
+                <div>
+                  <h4 class="facility-feat-title">Smart Automated Warehouse</h4>
+                  <p class="facility-feat-desc">Barcoded pick-pack automation connected to FedEx and DHL priority logistics with 24-hour blind dispatch guarantee.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Global Fulfillment Network (Interactive World Map)
+         ========================================================================= -->
+    <section id="network" class="section-padding network-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-globe-americas"></i> Global Reach</span>
+          <h2 class="section-title">Seamless Fulfillment Across 42+ Countries</h2>
+          <p class="section-subtitle">
+            Direct air-express injection partnerships ensuring fast domestic delivery speeds for your customers in North America, Europe, Australia, and the Middle East.
+          </p>
+        </div>
+
+        <div class="world-map-wrapper">
+          <!-- Stylized World Map Vector -->
+          <svg class="world-map-svg" viewBox="0 0 1000 500" fill="currentColor">
+            <path d="M150,120 Q180,80 240,100 T300,160 T260,240 T180,260 T140,180 Z" opacity="0.6"></path>
+            <path d="M220,280 Q250,260 280,310 T260,420 T210,440 T200,340 Z" opacity="0.6"></path>
+            <path d="M460,80 Q520,60 560,110 T520,170 T450,140 Z" opacity="0.6"></path>
+            <path d="M460,190 Q540,180 580,240 T540,380 T470,360 T450,250 Z" opacity="0.6"></path>
+            <path d="M600,80 Q720,60 820,110 T850,220 T740,240 T650,160 Z" opacity="0.6"></path>
+            <path d="M660,240 Q740,230 780,280 T720,320 T660,280 Z" opacity="0.7"></path>
+            <path d="M800,320 Q880,300 910,360 T860,440 T780,410 T790,340 Z" opacity="0.6"></path>
+          </svg>
+
+          <!-- Interactive Network Pins -->
+          <div class="map-network-pin pin-usa">
+            <div class="pin-pulse-dot"></div>
+            <div class="pin-tooltip">
+              <div class="pin-region-name">🇺🇸 United States & Canada</div>
+              <div class="pin-dispatch-speed"><i class="fas fa-plane"></i> 4–6 Business Days (FedEx Priority)</div>
+            </div>
+          </div>
+
+          <div class="map-network-pin pin-uk">
+            <div class="pin-pulse-dot"></div>
+            <div class="pin-tooltip">
+              <div class="pin-region-name">🇬🇧 United Kingdom</div>
+              <div class="pin-dispatch-speed"><i class="fas fa-plane"></i> 3–5 Business Days (Royal Mail / DHL)</div>
+            </div>
+          </div>
+
+          <div class="map-network-pin pin-eu">
+            <div class="pin-pulse-dot"></div>
+            <div class="pin-tooltip">
+              <div class="pin-region-name">🇪🇺 European Union (Germany, France, Italy)</div>
+              <div class="pin-dispatch-speed"><i class="fas fa-plane"></i> 4–6 Business Days (DHL Express)</div>
+            </div>
+          </div>
+
+          <div class="map-network-pin pin-uae">
+            <div class="pin-pulse-dot"></div>
+            <div class="pin-tooltip">
+              <div class="pin-region-name">🇦🇪 United Arab Emirates & GCC</div>
+              <div class="pin-dispatch-speed"><i class="fas fa-plane"></i> 2–3 Business Days (Aramex / FedEx)</div>
+            </div>
+          </div>
+
+          <div class="map-network-pin pin-india">
+            <div class="pin-pulse-dot"></div>
+            <div class="pin-tooltip">
+              <div class="pin-region-name">🇮🇳 RUROO Central Manufacturing Hub</div>
+              <div class="pin-dispatch-speed"><i class="fas fa-industry"></i> 120,000 Sq. Ft. Automated Campus</div>
+            </div>
+          </div>
+
+          <div class="map-network-pin pin-aus">
+            <div class="pin-pulse-dot"></div>
+            <div class="pin-tooltip">
+              <div class="pin-region-name">🇦🇺 Australia & New Zealand</div>
+              <div class="pin-dispatch-speed"><i class="fas fa-plane"></i> 5–7 Business Days (AusPost Express)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4-Step Effortless Dropship Process
+         ========================================================================= -->
+    <section class="section-padding process-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-stream"></i> How It Works</span>
+          <h2 class="section-title">Launch Your Brand in 4 Simple Steps</h2>
+          <p class="section-subtitle">
+            Zero complex supply chains. We turned enterprise-level contract manufacturing into a seamless automated dropshipping workflow.
+          </p>
+        </div>
+
+        <div class="process-steps-grid">
+          <div class="process-card">
+            <div class="process-step-number">01</div>
+            <h3 class="process-title">Choose Formulations</h3>
+            <p class="process-desc">
+              Browse our catalog of 3,500+ formulas. Order sample kits with 1-click to test textures, scents, and skin feel in person.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-number">02</div>
+            <h3 class="process-title">Brand & Packaging</h3>
+            <p class="process-desc">
+              Upload your logo and color palette. Our design team proofs your 3D digital renders and prepares custom foil-embossed boxes.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-number">03</div>
+            <h3 class="process-title">Sync Your Store</h3>
+            <p class="process-desc">
+              Connect your Shopify, TikTok Shop, or WooCommerce store with our app. Inventory levels and tracking numbers sync in real-time.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-number">04</div>
+            <h3 class="process-title">Automated Dispatch</h3>
+            <p class="process-desc">
+              When a customer orders, our robotic warehouse packs with your branding and blind-ships directly within 24 to 48 hours.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Client Testimonials
+         ========================================================================= -->
+    <section class="section-padding testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-star text-amber"></i> Success Stories</span>
+          <h2 class="section-title">Trusted by 850+ Fast-Growing Brands</h2>
+          <p class="section-subtitle">
+            See how founders scaled from initial sample kits to 7-figure e-commerce brands with RUROO.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "Finding RUROO was the turning point for my skincare brand. The Vitamin C serum formula is so good our repeat customer rate is 42%. We did $180k last month without touching a single box ourselves."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">SL</div>
+              <div>
+                <div class="author-name">Sophia Laurent</div>
+                <div class="author-brand">Founder, Lumière Botanics (Miami, FL)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "The luxury perfume line is unreal. The heavy crystal bottles and magnetic caps feel like a $150 designer fragrance, but our landed cost is under $10. Customers are raving about the 14-hour longevity."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">MK</div>
+              <div>
+                <div class="author-name">Marcus King</div>
+                <div class="author-brand">CEO, Royal Oud London (UK)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "The Rosemary Scalp Oil went viral on TikTok. We got 3,200 orders in 48 hours. RUROO's automated fulfillment center dispatched every single order on time without a hitch. Outstanding partner."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">AP</div>
+              <div>
+                <div class="author-name">Aarav Patel</div>
+                <div class="author-brand">Co-Founder, RootPure Haircare</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         FAQ Accordion
+         ========================================================================= -->
+    <section id="faq" class="section-padding faq-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-question-circle"></i> Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Everything you need to know about our private label manufacturing, blind dropshipping, and formulation compliance.
+          </p>
+        </div>
+
+        <div id="faq-accordion" class="faq-accordion-wrap"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <img src="assets/ruroo-logo.png" alt="RUROO" style="height: 48px;">
+          <p>
+            RUROO is the global manufacturing engine powering the next generation of 7-figure cosmetics, skincare, and wellness dropshipping brands.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="footer-social-icon instagram" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer-social-icon facebook" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-icon linkedin" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=918128153295" target="_blank" class="footer-social-icon whatsapp" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Formulations</h4>
+          <ul class="footer-links-list">
+            <li><a href="#catalog" onclick="window.RurooApp.setCategoryAndScroll('skincare')">Skincare & Serums</a></li>
+            <li><a href="#catalog" onclick="window.RurooApp.setCategoryAndScroll('cosmetics')">Color Cosmetics</a></li>
+            <li><a href="#catalog" onclick="window.RurooApp.setCategoryAndScroll('perfumes')">Luxury Perfumes</a></li>
+            <li><a href="#catalog" onclick="window.RurooApp.setCategoryAndScroll('haircare')">Haircare & Scalp</a></li>
+            <li><a href="#catalog" onclick="window.RurooApp.setCategoryAndScroll('petcare')">Pet Grooming</a></li>
+            <li><a href="#catalog" onclick="window.RurooApp.setCategoryAndScroll('nutra')">Nutraceuticals</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Solutions & Tools</h4>
+          <ul class="footer-links-list">
+            <li><a href="#offerings">Private Label Dropship</a></li>
+            <li><a href="#offerings">White Label Ready</a></li>
+            <li><a href="#calculator">Profit & Margin Calculator</a></li>
+            <li><a href="#facility">Cleanroom Facility</a></li>
+            <li><a href="#network">Global Network</a></li>
+            <li><a href="#faq">Fulfillment SLA</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact & Facility</h4>
+          <div class="footer-contact-info">
+            <p><i class="fas fa-map-marker-alt text-amber"></i> Gujarat Industrial Corridor, India</p>
+            <p><a href="tel:+918128153295"><i class="fas fa-phone-alt text-amber"></i> +91 81281 53295</a></p>
+            <p><a href="mailto:partner@rurooglobal.com"><i class="far fa-envelope text-amber"></i> partner@rurooglobal.com</a></p>
+            <p><i class="fas fa-certificate text-emerald"></i> Export Neutral Code: <strong>EX-IND/COS/2026/9821</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>© 2026 RUROO™ Global Private Label & Manufacturing Pvt. Ltd. All rights reserved.</p>
+        <p>FDA Compliant • WHO-GMP Certified • ISO 9001:2015 Accredited Facility</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Slide-Over RFQ / Sample Kit Drawer
+       ========================================================================= -->
+  <div id="rfq-drawer-backdrop" class="rfq-drawer-backdrop"></div>
+  <aside id="rfq-sample-drawer" class="rfq-sample-drawer">
+    <div class="rfq-drawer-header">
+      <div class="rfq-drawer-title">
+        <i class="fas fa-box-open text-amber"></i>
+        <span>Sample Kit & RFQ</span>
+      </div>
+      <button type="button" id="rfq-drawer-close" class="rfq-drawer-close-btn">&times;</button>
+    </div>
+
+    <div class="rfq-drawer-body">
+      <!-- Items Container -->
+      <div>
+        <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 12px; color: var(--text-secondary);">
+          Selected Sample Formulations:
+        </h4>
+        <div id="rfq-drawer-items" class="rfq-drawer-items-list"></div>
+      </div>
+
+      <!-- Quick Inquiry Form -->
+      <form id="rfq-inquiry-form" class="rfq-inquiry-box">
+        <h4><i class="fas fa-paper-plane text-amber"></i> Brand Onboarding & Sample Dispatch</h4>
+        <div class="form-group-sm">
+          <label for="rfq-brand-name">Your Brand or Company Name *</label>
+          <input type="text" id="rfq-brand-name" class="form-control-sm" placeholder="e.g. Aurelia Luxe Skincare" required>
+        </div>
+        <div class="form-group-sm">
+          <label for="rfq-email">Work Email Address *</label>
+          <input type="email" id="rfq-email" class="form-control-sm" placeholder="founder@yourbrand.com" required>
+        </div>
+        <div class="form-group-sm">
+          <label for="rfq-phone">Phone / WhatsApp Number *</label>
+          <input type="tel" id="rfq-phone" class="form-control-sm" placeholder="+1 (555) 000-0000" required>
+        </div>
+        <div class="form-group-sm">
+          <label for="rfq-country">Shipping Country & Postal Code *</label>
+          <input type="text" id="rfq-country" class="form-control-sm" placeholder="United States, 90210" required>
+        </div>
+        <div class="form-group-sm">
+          <label for="rfq-platform">Current E-Commerce Platform</label>
+          <select id="rfq-platform" class="form-control-sm">
+            <option value="shopify">Shopify</option>
+            <option value="tiktok">TikTok Shop</option>
+            <option value="woocommerce">WooCommerce</option>
+            <option value="amazon">Amazon FBA</option>
+            <option value="new">Launching New Brand</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary w-100 mt-3">
+          <i class="fas fa-check-circle"></i> Submit Sample Kit Request
+        </button>
+      </form>
+    </div>
+
+    <div class="rfq-drawer-footer">
+      <div class="rfq-subtotal-row">
+        <span>Sample Kit Subtotal:</span>
+        <span id="rfq-drawer-subtotal" class="rfq-subtotal-val">$0.00</span>
+      </div>
+      <p class="text-xs text-muted text-center">
+        <i class="fas fa-truck text-emerald"></i> Express sample air dispatch within 24-48 hours.
+      </p>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       Quick View Modal
+       ========================================================================= -->
+  <div id="quick-view-modal" class="modal-backdrop-custom">
+    <div class="modal-container-custom">
+      <button type="button" id="quick-view-close" class="modal-close-custom">&times;</button>
+      <div id="quick-view-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Success Confirmation Modal
+       ========================================================================= -->
+  <div id="rfq-success-modal" class="modal-backdrop-custom">
+    <div class="modal-container-custom" style="max-width: 520px;">
+      <button type="button" id="success-modal-close" class="modal-close-custom">&times;</button>
+      <div class="success-modal-body">
+        <div class="success-icon-wrap">
+          <i class="fas fa-check"></i>
+        </div>
+        <h2 style="font-family: var(--font-heading); font-size: 1.6rem; margin-bottom: 8px;">Inquiry Received!</h2>
+        <p class="text-secondary text-sm">
+          Thank you. Our private label account director has received your sample quotation request for <strong id="success-brand-name" class="text-white">Your Brand</strong>.
+        </p>
+        <div class="success-ref-pill">
+          Reference ID: <span id="success-ref-id">RUROO-839210</span>
+        </div>
+        <p class="text-xs text-muted mb-4">
+          A confirmation with tracking estimates has been sent to <span id="success-email-target" class="text-white"></span>.
+        </p>
+        <div class="d-flex flex-column gap-2">
+          <a id="success-whatsapp-link" href="#" target="_blank" class="btn btn-emerald w-100">
+            <i class="fab fa-whatsapp"></i> Chat With Dedicated Account Manager
+          </a>
+          <button class="btn btn-secondary w-100" onclick="document.getElementById('rfq-success-modal').classList.remove('active');">
+            Continue Browsing Formulations
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Floating Quick-Contact Hub (WhatsApp & Phone)
+       ========================================================================= -->
+  <div class="floating-contact-hub">
+    <a href="https://api.whatsapp.com/send?phone=918128153295&text=Hello%20RUROO%20team!%20I%20am%20exploring%20private%20label%20dropshipping%20for%20my%20brand." 
+       target="_blank" class="floating-btn whatsapp" aria-label="Chat on WhatsApp" title="WhatsApp Business">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+918128153295" class="floating-btn phone" aria-label="Call RUROO" title="Call Us Directly">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
